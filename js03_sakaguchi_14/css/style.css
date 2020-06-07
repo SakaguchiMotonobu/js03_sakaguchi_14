@@ -1,0 +1,219 @@
+/* 共通部分,condition.html */
+.header {
+  margin: 0 auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffcc33;
+}
+.title {
+  font-family: "sans-serif";
+  font-weight: bold;
+  color: #464646;
+}
+.main_title {
+  text-decoration: none;
+}
+.icon {
+  width: 400px;
+  display: flex;
+  margin: 0 auto 120px;
+  justify-content: space-between;
+}
+.icon div {
+  width: 150px;
+  height: 150px;
+}
+.icon div a img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: solid 2px gray;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.icon div a img:hover {
+  opacity: 0.6;
+}
+.icon div p {
+  text-align: center;
+  color: #464646;
+}
+.input {
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  border: solid 12px #ff9933;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.input_title {
+  margin: 0 auto 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.small_title {
+  margin: 0 auto 0;
+  padding: 0 0 0 25px;
+  color: #464646;
+}
+.small_input {
+  display: flex;
+  margin: 0 auto 10px;
+  padding: 0 0 0 25px;
+  color: #464646;
+}
+.date_input {
+  height: 1.5em;
+  color: #464646;
+}
+.weight_input,
+.exercise_minute {
+  height: 1.5em;
+  width: 60px;
+  color: #464646;
+}
+.exercise_discipline {
+  height: 2em;
+}
+.submit {
+  width: 300px;
+  text-align: center;
+  margin: 25px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.submit_btn,
+.delete_btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.4em;
+  text-decoration: none;
+  background: #ff9933; /*ボタン色*/
+  color: #fff;
+  border-bottom: solid 3px #ff3300; /*ボタン色より暗めに*/
+  border-right: solid 3px #ff6600; /*ボタン色より暗めに*/
+}
+.submit_btn:before,
+.delete_btn:before {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 3px 3px 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #fff;
+}
+.submit_btn:after,
+.delete_btn:after {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 3px 3px 0px;
+  border-style: solid;
+  border-color: #fff;
+  border-bottom-color: transparent;
+}
+.submit_btn:active,
+.delete_btn:active {
+  /*ボタンを押したとき*/
+  border: none;
+  -webkit-transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
+}
+.submit_btn:active:after,
+.submit_btn:active:before,
+.delete_btn:active:after,
+.delete_btn:active:before {
+  content: none; /*ボタンを押すと線が消える*/
+}
+.footer {
+  margin-top: 50px;
+  padding: 20px 40px 20px;
+  background: #707070;
+  color: #fff;
+  text-align: left;
+}
+
+/* weight.html,exercise.html共通 */
+.header_icon {
+  display: flex;
+}
+.header_icon {
+  width: 300px;
+  display: flex;
+  margin: 0 auto 50px;
+  justify-content: center;
+}
+.header_icon div {
+  width: 80px;
+  height: 80px;
+}
+.header_icon div img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border: solid 2px gray;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.header_icon p {
+  line-height: 60px;
+  color: #464646;
+  margin-left: 15px;
+}
+.chart_weight {
+  width: 500px;
+  margin: 0 auto 40px;
+}
+.chart_exercise {
+  width: 800px;
+  margin: 0 auto;
+}
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table th:first-child {
+  border-radius: 5px 0 0 0;
+}
+table th:last-child {
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #ff9933;
+}
+table th {
+  text-align: center;
+  color: white;
+  background: linear-gradient(#ffcc33, #ff6633);
+  border-left: 1px solid #ff9933;
+  border-top: 1px solid #ff9933;
+  border-bottom: 1px solid #ff9933;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+  width: 25%;
+  padding: 10px 0;
+}
+table td {
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top: none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+table td:last-child {
+  border-right: 1px solid #a8b7c5;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}

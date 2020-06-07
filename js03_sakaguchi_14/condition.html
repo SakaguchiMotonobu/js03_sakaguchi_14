@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>体調管理アプリ</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- ブラウザの画面に見える内容 -->
+  <body>
+    <header>
+      <div class="header">
+        <a href="condition.html"><img src="img/walking.png" alt="歩く人" /></a>
+        <a href="condition.html" class="main_title"
+          ><p class="title">体調管理アプリ</p></a
+        >
+      </div>
+    </header>
+
+    <div class="icon">
+      <div class="weight">
+        <a href="weight.html"
+          ><img src="img/scale.png" alt="体重計" class="weight_img" />
+        </a>
+        <p>体重の推移</p>
+      </div>
+      <div class="exercise">
+        <a href="exercise.html"
+          ><img src="img/dumbbell.png" alt="ダンベル" class="exercise_img"
+        /></a>
+        <p>運動の記録</p>
+      </div>
+    </div>
+
+    <div class="input">
+      <div class="input_title">
+        <img src="img/record.png" alt="メモ" />
+        <p class="title">日々の記録</p>
+      </div>
+
+      <p class="small_title">●日付</p>
+      <div class="small_input">
+        <input type="date" id="date" class="date_input" placeholder="Date" />
+      </div>
+
+      <p class="small_title">●体重</p>
+      <div class="small_input">
+        <input type="number" id="weight_input" class="weight_input" />ｋｇ
+      </div>
+
+      <p class="small_title">●運動</p>
+      <div class="small_input">
+        <select
+          name="exercise"
+          id="exercise_discipline"
+          class="exercise_discipline"
+        >
+          <option value="">-</option>
+          <option value="1">ウォーキング</option>
+          <option value="2">ランニング</option>
+          <option value="3">スイミング</option>
+          <option value="4">サイクリング</option>
+        </select>
+        を
+        <input type="number" id="exercise_minute" class="exercise_minute" />分
+      </div>
+
+      <div class="submit">
+        <a href="" id="submit_btn" class="submit_btn">データ送信</a>
+        <a href="" id="delete_btn" class="delete_btn">記録の削除</a>
+      </div>
+    </div>
+
+    <footer class="footer text-center">
+      <div class="wrapper">
+        <small class="copyrights"
+          >&copy;Copyright 2020 XXXXX All rIghts reserved.
+        </small>
+      </div>
+    </footer>
+    <!--/ ブラウザの画面に見える内容 -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+    <!-- jsファイル読込み -->
+    <script src="js/condition.js"></script>
+  </body>
+</html>

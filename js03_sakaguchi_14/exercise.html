@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>運動の記録</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- ブラウザの画面に見える内容 -->
+  <body>
+    <header>
+      <div class="header">
+        <a href="condition.html"><img src="img/walking.png" alt="歩く人" /></a>
+        <a href="condition.html" class="main_title"
+          ><p class="title">体調管理アプリ</p></a
+        >
+      </div>
+    </header>
+
+    <div class="header_icon">
+      <div>
+        <img src="img/dumbbell.png" alt="ダンベル" class="exercise_img" />
+      </div>
+      <p>運動の記録</p>
+    </div>
+
+    <div class="chart_exercise">
+      <table id="output_exercise">
+        <tr>
+          <th>日付</th>
+          <th>種目</th>
+          <th>時間（分）</th>
+          <th>消費カロリー（kcal）</th>
+        </tr>
+      </table>
+    </div>
+
+    <footer class="footer text-center">
+      <div class="wrapper">
+        <small class="copyrights"
+          >&copy;Copyright 2020 XXXXX All rIghts reserved.
+        </small>
+      </div>
+    </footer>
+    <!--/ ブラウザの画面に見える内容 -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <!-- jsファイル読込み -->
+    <script src="js/condition.js"></script>
+  </body>
+</html>
